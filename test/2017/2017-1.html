@@ -1,0 +1,3410 @@
+<HTML>
+<HEAD>
+<TITLE>石油地球物理勘探</TITLE>
+	<META http-equiv=Content-Type content="text/html; charset=utf-8">
+	<link href="../../images/css.css" type="text/css" rel="stylesheet">
+	<META content="MSHTML 6.00.2900.3157" name=GENERATOR>
+	<SCRIPT language=javascript src="../../images/OPENWIN.JS"></SCRIPT>
+	
+<LINK rel=stylesheet type=text/css href="../../images/css.css">
+    <META name=GENERATOR content="MSHTML 6.00.2900.3157">
+   
+<SCRIPT language=javascript>
+		function Maximize()
+		{
+			self.moveTo(0,0);
+			self.resizeTo(screen.availWidth,screen.availHeight);
+		}
+		
+		function clearall()
+		{
+			var the_box = window.document.all('pid');
+			for(var i=0;i< the_box.length;i++)
+			{
+				the_box[i].checked = false;
+			}
+		}
+		
+		function isready1(form)
+		{
+			var blnAlert = 0;
+			var str_article = "";
+			if (typeof(AbstractList.pid.length)=="undefined") 
+			{  
+				if(AbstractList.pid.checked==true)
+				{
+					blnAlert = blnAlert+1;
+					str_article = str_article + AbstractList.pid.value+",";
+				}
+			} 
+			else 
+			{
+				for (i=0;i<AbstractList.pid.length;i++) 
+				{
+			  	if(AbstractList.item("pid",i).checked==true)
+			  	{  
+						blnAlert = blnAlert+1;
+						str_article = str_article + AbstractList.item("pid",i).value+",";
+					}
+			  } 
+			}
+			if (blnAlert==0)
+			{
+				alert("请您先选中文章！");
+				return  false;
+			}
+			//alert(str_article);
+			form.action="../article/uniteZhaiYao.do?uniteId="+str_article;
+			form.submit;
+		}
+		
+		function set_abs()
+		{
+			abst.style.display = "block";
+		}
+		
+		function showArticleFile(attachType,articleId)
+		{
+			//var viewAttach = "";
+			//viewAttach = "../article/showArticleFile.do?attachType="+attachType+"&id="+articleId;
+			//window.open(viewAttach,"下载文件","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizeable=no,copyhistory=no,width=520,height=200,left=88,top=88");
+			form=document.articleFile;
+			form.attachType.value=attachType;
+			form.id.value=articleId;
+			form.action="../article/showArticleFile.do";//?attachType="+attachType+"&id="+articleId;
+			form.submit();
+		}
+	</SCRIPT>
+
+</HEAD>
+   
+   
+<BODY LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+    <TABLE border=0 cellSpacing=0 cellPadding=0 width=1004 align=center>
+		<!--头部-->
+		<TR>
+		<TD valign=top>
+				<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>石油地球物理勘探</TITLE>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../images/css.css" type="text/css" rel="stylesheet">
+	<META content="MSHTML 6.00.2900.3157" name=GENERATOR>
+    <META name=GENERATOR content="MSHTML 6.00.2900.3157">
+
+</HEAD>
+
+<BODY LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width="1004">
+                    <TBODY>
+                    <TR>
+                      <TD width="1004"><IMG border=0 src="../../images/banner.jpg" 
+                        width=1004 height=120></TD></TR>
+                    <TR>
+                      <TD bgColor=#0268aa height=30 
+                      background=../../images/lm_bj.jpg>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 
+                          width="97%"><TBODY>
+                          <TR>
+                            <TD class=txt_bs vAlign=center width="26%" 
+                            align=left>&nbsp;&nbsp;&nbsp;
+                              <SCRIPT language=JavaScript>
+today=new Date();
+function initArray(){
+this.length=initArray.arguments.length
+for(var i=0;i<this.length;i++)
+this[i+1]=initArray.arguments[i]  }
+var d=new initArray(
+" 星期日",
+" 星期一",
+" 星期二",
+" 星期三",
+" 星期四",
+" 星期五",
+" 星期六");
+document.write(
+"<font color=#ffffff style='font-size:9pt;font-family: 宋体'> ",
+today.getFullYear(),"年",
+today.getMonth()+1,"月",
+today.getDate(),"日",
+d[today.getDay()+1],
+"</font>" );
+                    </SCRIPT>                               </TD>
+					  <TD height=5 vAlign=center width="50%" 
+                              align=center><SPAN class=txt_t><FONT 
+                              style="FONT-FAMILY: 微软雅黑; FONT-SIZE: 16pt" 
+                              color=#FF0000>&nbsp;EI收录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中文核心期刊</FONT></SPAN>&nbsp;</TD>
+                            <TD height=25 vAlign=center width="74%" 
+                              align=right><SPAN class=txt_bs><FONT 
+                              style="FONT-FAMILY: 宋体; FONT-SIZE: 9pt" 
+                              color=#ffffff>&nbsp;<A class=txt_bs 
+                              href="../volumn/home.shtml">首页</A></FONT></SPAN>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+</body>
+</html>
+
+		 </TD>
+		</TR>
+    </table>		
+    
+		<!--中间--> 
+				
+    <TABLE width=1004 height="100%" border=0 align=center cellPadding=0 cellSpacing=0>
+    
+    <TR>
+		<!--中间. 左部-->    
+    <TD width=175 height="100%" vAlign=top  bgcolor="#ffffff">
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>石油地球物理勘探</TITLE>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../images/css.css" type="text/css" rel="stylesheet">
+	<META content="MSHTML 6.00.2900.3157" name=GENERATOR>
+    <META name=GENERATOR content="MSHTML 6.00.2900.3157">
+
+</HEAD>
+
+<BODY LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+<SCRIPT language=JavaScript type=text/JavaScript>
+function chg(obj,order)
+{
+   var scnt=obj.cnt;
+   for(i=0;i<jcnt;i++)
+   {
+    tobj=eval("document.all.jlist"+(i+1));
+	tobj.style.visibility="hidden";
+   }
+   sobj=eval("document.all.jlist"+scnt);
+   sobj.style.visibility="visible";
+   if(order==1) obj.style.backgroundColor="#FF9900";
+   else obj.style.backgroundColor="";
+}
+
+function chg2(obj,order)
+{
+   if(order==1) obj.style.backgroundColor="#FF9900";
+   else obj.style.backgroundColor="";
+}
+</SCRIPT>
+<TABLE width=176 height="100%" border=0 align=left cellPadding=0 cellSpacing=0>
+  <TR>
+                <TD width=160 height="100%" vAlign=top bgColor=#003569>
+                  <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" 
+                  align=center>
+                    <TBODY>
+                    <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                      align=left>　<FONT class=lm face=宋体>·</FONT><A class=lm 
+                        href="../column/column79.shtml">期刊介绍</A>                    </TD></TR>
+                    <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                      align=left>　<FONT class=lm face=宋体>·</FONT><A class=lm 
+                        href="../column/column80.shtml">编 委 会</A>                    </TD></TR>
+                   <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+		   <TR>
+                      <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                      align=left>　<FONT class=lm face=宋体>·</FONT><A class=lm 
+                        href="../folder/folder70.shtml">综合信息</A>                    </TD></TR>
+                   <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD bgColor=#034e7e background=../../images/lm_bj.jpg 
+                      align=left>　<SPAN class=lm></SPAN><FONT class=lm 
+                        face=宋体>·</FONT><SPAN class=lm></SPAN><SPAN 
+                        class=lm>广告合作</SPAN></TD></TR>
+                    <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                      align=left>　　<A class=lm 
+                        href="../column/column158.shtml">广告须知</A></TD></TR>
+                   <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD bgColor=#034e7e background=../../images/lm_bj.jpg 
+                      align=left>　<SPAN class=lm></SPAN><FONT class=lm 
+                        face=宋体>·</FONT><SPAN class=lm></SPAN><SPAN 
+                        class=lm>全文浏览</SPAN></TD></TR>
+                    <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                      align=left>　　<A class=lm 
+                        href="../volumn/current.shtml">当期目录</A></TD>
+                    </TR>
+                    <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                      align=left>　　<A class=lm 
+                        href="../article/showTenYearOldVolumn.do">过刊浏览</A></TD>
+                    </TR>
+                    <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                      align=left>　　<A class=lm 
+                        href="../article/showNewArticle.do">最新录用</A></TD>
+                    </TR>  <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                      align=left>　　<A class=lm 
+                        href="http://navi.cnki.net/knavi/JournalDetail?pcode=CJFD&pykm=SYDQ">优先出版</A></TD>
+                    </TR>
+                    <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                      align=left>　　<A class=lm 
+                        href="../article/advSearchArticle.do">高级检索</A></TD>
+                    </TR>
+                    <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                      align=left>　　<A class=lm 
+                                href="../article/showBrowseTopList.do">论文点击排行</A></TD>
+                    </TR>
+                    <TR>
+                      <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                      align=left>　　<A class=lm 
+                                href="../article/showDownloadTopList.do">论文下载排行</A></TD></TR>
+                    <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD bgColor=#034e7e background=../../images/lm_bj.jpg 
+                      align=left>　<FONT class=lm face=宋体>·</FONT><SPAN 
+                        class=lm>编 辑 部</SPAN></TD></TR>
+                    <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                      align=left>　　<A class=lm 
+                        href="../column/column375.shtml">关于我们</A></TD></TR>
+                    <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                      align=left>　　<A class=lm target=_blank 
+                        href="http://manu52.magtech.com.cn/Journalx_ogp/editorLogOn.action?mag_Id=7">编辑办公</A></TD></TR>
+						<TR>
+                      <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                      align=left>　　<A class=lm target=_blank 
+                        href="http://v.youku.com/v_show/id_XMzc3MTgxNzk2MA==.html">创刊50周年专题片</A></TD></TR>
+                    <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD bgColor=#034e7e background=../../images/lm_bj.jpg 
+                      align=left>　<FONT class=lm face=宋体>·</FONT><SPAN 
+                        class=lm>编辑部公告</SPAN></TD></TR>
+                    <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD height=10></TD></TR>
+                    <TR>
+                      <TD align=left>
+                        <MARQUEE onmouseover=this.stop() onmouseout=this.start() 
+                        direction=up height=120 width=140 scrollAmount=1 
+                        scrollDelay=10>
+						                                                                                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="11%" align="center" valign="top"><font color="#ffffff" face="宋体">·</font></td>
+                              <td width="89%" valign="top"><A href="../column/item93.shtml"><font color="#FFFFFF">《石油地球物理勘探》微信公众平台和QQ群已创建</font></A></td>
+                            </tr>
+                            <tr>
+                              <td height="3"></td>
+                              <td></td>
+                            </tr>
+                          </table>
+							 
+                              	                                                                                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="11%" align="center" valign="top"><font color="#ffffff" face="宋体">·</font></td>
+                              <td width="89%" valign="top"><A href="../column/item88.shtml"><font color="#FFFFFF">物探学字〔2017〕6号</font></A></td>
+                            </tr>
+                            <tr>
+                              <td height="3"></td>
+                              <td></td>
+                            </tr>
+                          </table>
+							 
+                              	                                                                                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="11%" align="center" valign="top"><font color="#ffffff" face="宋体">·</font></td>
+                              <td width="89%" valign="top"><A href="../column/item84.shtml"><font color="#FFFFFF">《石油地球物理勘探》荣获“新中国60年有影响力的期刊”称号</font></A></td>
+                            </tr>
+                            <tr>
+                              <td height="3"></td>
+                              <td></td>
+                            </tr>
+                          </table>
+							 
+                              	                                                                                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="11%" align="center" valign="top"><font color="#ffffff" face="宋体">·</font></td>
+                              <td width="89%" valign="top"><A href="../column/item85.shtml"><font color="#FFFFFF">本刊将全文上网</font></A></td>
+                            </tr>
+                            <tr>
+                              <td height="3"></td>
+                              <td></td>
+                            </tr>
+                          </table>
+							 
+                              	                                                                                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="11%" align="center" valign="top"><font color="#ffffff" face="宋体">·</font></td>
+                              <td width="89%" valign="top"><A href="../column/item83.shtml"><font color="#FFFFFF">中国北方优秀期刊评奖活动揭晓——《石油地球物理勘探》获“中国北方十佳期刊”奖项</font></A></td>
+                            </tr>
+                            <tr>
+                              <td height="3"></td>
+                              <td></td>
+                            </tr>
+                          </table>
+							 
+                              	                                                                                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td width="11%" align="center" valign="top"><font color="#ffffff" face="宋体">·</font></td>
+                              <td width="89%" valign="top"><A href="../column/item86.shtml"><font color="#FFFFFF">《石油地球物理勘探》网站开通！</font></A></td>
+                            </tr>
+                            <tr>
+                              <td height="3"></td>
+                              <td></td>
+                            </tr>
+                          </table>
+							 
+                              	                                                  </MARQUEE></TD></TR>
+                    <TR>
+                      <TD height=10></TD></TR>
+                    <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD align=left>　　<A class=lm 
+                        href="http://www.ogp-cn.com.cn/cn/gjjs.asp"></A>　<A 
+                        class=lm 
+                        href="http://www.ogp-cn.com.cn/cn/gjjs.asp"></A>　<A 
+                        class=lm 
+                        href="http://www.ogp-cn.com.cn/cn/gjjs.asp"></A>　<A 
+                        class=lm 
+                        href="http://www.ogp-cn.com.cn/cn/gjjs.asp"></A>　<A 
+                        class=lm 
+                        href="http://www.ogp-cn.com.cn/cn/gjjs.asp"></A>　<A 
+                        class=lm 
+                        href="http://www.ogp-cn.com.cn/cn/gjjs.asp"></A>　<A 
+                        class=lm 
+                        href="http://www.ogp-cn.com.cn/cn/gjjs.asp"></A><A 
+                        class=lm 
+                        href="../column/column78.shtml">更多...</A></TD>
+                    </TR>
+                    <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD class=txt_bs height=50 align=left>&nbsp;访问量:<FONT 
+                        color=#ffffff>
+                        <script language="javascript" type="text/javascript" src="http://quote.51.la/?id=3441967&amp;mb=2"></script>
+                      </FONT><BR></TD></TR>
+                    <TR>
+    <TD height=10></TD></TR></TBODY></TABLE></TD>
+                <TD vAlign=top width=16 align=left><IMG 
+                  src="../../images/xx.gif" width=16 height=10></TD>
+
+</TR></TABLE>
+</body>
+</html>
+	</TD>
+	
+	<TD width=8  bgcolor="#ffffff"></TD>
+	
+		<!--中间. 中间--> 	
+	<TD align="center" vAlign=top  bgcolor="#ffffff">
+<table border="0" cellspacing="0" cellpadding="0" height="8">
+                    <tbody>
+                      <tr>
+                        <td height="10" 
+    width="204"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+<TABLE class=td41 border=0 cellSpacing=0 cellPadding=0 width="100%" 
+            bgColor=#f1f1f1>
+                    <TBODY>
+                      <TR vAlign=center>
+                        <TD vAlign=center width=56 align=right><IMG 
+                  src="../../images/z_js.gif" width=36 height=30></TD>
+                        <TD height=25 vAlign=center width=90 align=right>文章快速检索</TD>
+                        <TD class=txt_lm width=9>&nbsp;</TD>
+                        <FORM method=post name=frm_ks  action=../article/searchArticle.do>
+                          <TD height=25 width=202 align=middle><INPUT maxLength=30 
+                  size=25 name=ks_keyword></TD>
+                          <TD width=8>&nbsp;</TD>
+                          <TD 
+                width=56><INPUT value=" GO " type=submit name=Submit22></TD>
+                        </FORM>
+                        <TD height=25 width=173 align=left><A 
+                  href="../article/advSearchArticle.do">高级检索</A></TD>
+                      </TR>
+                    </TBODY>
+      </TABLE>
+				
+	              <table width="60%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td height="15"></td>
+                    </tr>
+                  </table>
+	              <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td4">
+        <tr>
+          <td height="29" background="../../images/lm_bj.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="6%" align="center"><img src="../../images/j.gif" width="5" height="10" /></td>
+                <td width="85%"><span class="STYLE37">石油地球物理勘探</span></td>
+                <td width="9%"></td>
+              </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td height="5"></td>
+        </tr>
+        <tr>
+          <td height="30" align="center"><FORM name=AbstractList onSubmit="return isready1(this)" action="../article/uniteZhaiYao.do" method=post target=_blank>
+                    <TABLE height=156 width="98%" align=center border=0>
+                    <TR>
+                    <TD>
+                    <TABLE height=122 cellSpacing=0 cellPadding=0 width="100%" border=0>
+                      <TR>
+                        <TD vAlign=top align=left width=1>&nbsp;</TD>
+                        <TD vAlign=top align=left><TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TR vAlign=top align=left>
+                              <TD width=209 height=150 align="center"><IMG height=180 src="../../fileup/COVER/20180106134814.jpg" width=130 align=middle border=0></TD>
+                              <TD width=21 align="center"></TD>
+                              <TD vAlign=middle align=left width=371><TABLE border="0" cellSpacing="0" cellPadding="0" width="100%">
+                                <TBODY>
+                                  <TR vAlign="center" align="left">
+                                    <TD><strong>2017年&nbsp;52卷&nbsp;s2期<br>
+刊出日期：2017-12-31</strong></TD>
+                                    <TD></TD>
+                                  </TR>
+                                  <TR vAlign="center" align="left">
+                                    <TD height="5" colSpan="3"><HR SIZE="1">                                    </TD>
+                                  </TR>
+                                  <TR vAlign="center" align="left">
+                                    <TD colSpan="2" valign="top">  <A href="#目录">目录</A><br>
+                                       <A href="#处理技术">处理技术</A><br>
+                                       <A href="#偏移成像">偏移成像</A><br>
+                                       <A href="#综合研究">综合研究</A><br>
+                                       <A href="#非地震">非地震</A><br>
+                                       <A href="#软件技术与应用">软件技术与应用</A><br>
+                                       </TD>
+                                  </TR>
+                                </TBODY>
+                              </TABLE>                                </TD>
+                            </TR>
+                            <TR>
+                              <TD height=5></TD>
+                            </TR>
+                            <TR vAlign=top align=left>
+                              <TD colSpan=2>&nbsp;&nbsp;&nbsp;<a href=
+
+
+
+
+
+
+	volumn_1476.shtml
+
+	><IMG src="../../images/btn_previous.gif" border=0></a><a href=
+
+
+
+
+		volumn_1479.shtml
+
+	
+	
+	
+	 ><IMG src="../../images/btn_next.gif" border=0></a></TD>
+                              <TD></TD>
+                            </TR>
+                            <TR vAlign=top align=left>
+                              <TD colSpan=2><A href="volumn_1477.shtml"><IMG src="../../images/ch-tab_citation_on.gif" border=0></A><A href="volumn_1477_abs.shtml"><IMG src="../../images/ch-tab_fullabs_off.gif" border=0></A></TD>
+                              <TD valign="bottom"></TD>
+                            </TR>
+                            <TR vAlign=top align=left bgColor=#cccccc>
+                              <TD colSpan=3><INPUT name="image" type=image src="../../images/ch-btn_subset2.gif" border=0></TD>
+                            </TR>
+                        </TABLE></TD>
+                      </TR>
+                    </TABLE>
+	                	                	                <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                      <TR>
+                        <TD height=20></TD>
+                        <TD vAlign=top align=left><TABLE width="100%" height=20 border=0 cellpadding="0" cellspacing="0">
+						<TR>
+                                          <TD bgColor=#eeeff0 height=20>&nbsp;<a name="目录"></a><strong><FONT 
+                        color=#ff9900>目录</FONT></strong></TD>
+                          </TR>
+                        </TABLE>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=3></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE></TD>
+                     
+                      </TR>
+                      <TR>
+                        <TD width=1></TD>
+                        <TD vAlign=top align=left>
+                                                                                                                       
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7803 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>英文摘要</strong><br>
+<br>
+2017 52 (s2):0-0. <span class="STYLE39">(目录)</span> <br>
+DOI: 
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7803.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+0 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7803"
+                                                                        >PDF</a> [182 K] (<span class="STYLE33"> 
+
+
+
+
+
+163
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7803"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7840 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>目录</strong><br>
+<br>
+2017 52 (s2):0-0. <span class="STYLE39">(目录)</span> <br>
+DOI: 
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7840.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+0 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7840"
+                                                                        >PDF</a> [455 K] (<span class="STYLE33"> 
+
+
+
+
+
+208
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7840"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                        </TD>
+                          
+                          
+                      </TR>
+                      </TABLE>
+                        	                <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                      <TR>
+                        <TD height=20></TD>
+                        <TD vAlign=top align=left><TABLE width="100%" height=20 border=0 cellpadding="0" cellspacing="0">
+						<TR>
+                                          <TD bgColor=#eeeff0 height=20>&nbsp;<a name="处理技术"></a><strong><FONT 
+                        color=#ff9900>处理技术</FONT></strong></TD>
+                          </TR>
+                        </TABLE>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=3></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE></TD>
+                     
+                      </TR>
+                      <TR>
+                        <TD width=1></TD>
+                        <TD vAlign=top align=left>
+                                                                                                                                                                         
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7804 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>WalkawayVSP处理技术及应用</strong><br>
+臧胜涛, 王建华, 杨哲, 金保中, 刘杰<br>
+2017 52 (s2):1-6. <span class="STYLE39">(处理技术)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.001
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7804.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+2 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7804"
+                                                                        >PDF</a> [1530 K] (<span class="STYLE33"> 
+
+
+
+
+
+303
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7804"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7805 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>转换波处理关键技术应用及效果</strong><br>
+杨维, 王小卫, 冯会元, 边冬辉, 杨哲, 刘杰<br>
+2017 52 (s2):7-13. <span class="STYLE39">(处理技术)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.002
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7805.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+5 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7805"
+                                                                        >PDF</a> [2274 K] (<span class="STYLE33"> 
+
+
+
+
+
+252
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7805"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7806 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>低信噪比数据静校正技术综合应用研究</strong><br>
+陈海峰, 晏伟, 蔡东地, 柴军丽, 王飞, 岳媛媛<br>
+2017 52 (s2):14-18. <span class="STYLE39">(处理技术)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.003
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7806.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+3 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7806"
+                                                                        >PDF</a> [1186 K] (<span class="STYLE33"> 
+
+
+
+
+
+287
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7806"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7807 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>基于直达波偏振分析的三分量检波器定向方法</strong><br>
+张文波, 李建峰, 孙鹏远, 聂红梅, 郭敏, 雷娜<br>
+2017 52 (s2):19-25. <span class="STYLE39">(处理技术)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.004
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7807.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+5 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7807"
+                                                                        >PDF</a> [1265 K] (<span class="STYLE33"> 
+
+
+
+
+
+235
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7807"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7808 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>海底电缆资料处理关键技术及其应用</strong><br>
+程元方, 李素闪, 张文栋, 刘建红<br>
+2017 52 (s2):26-31. <span class="STYLE39">(处理技术)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.005
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7808.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+3 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7808"
+                                                                        >PDF</a> [1774 K] (<span class="STYLE33"> 
+
+
+
+
+
+280
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7808"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7809 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>基于数据重组的反向线性噪声压制方法及效果</strong><br>
+牛中宁, 童庆佳, 刘宁, 陈超群, 王世成, 刘娜<br>
+2017 52 (s2):32-37,44. <span class="STYLE39">(处理技术)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.006
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7809.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+2 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7809"
+                                                                        >PDF</a> [1466 K] (<span class="STYLE33"> 
+
+
+
+
+
+235
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7809"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7810 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>多方法静校正融合技术在鄂尔多斯盆地黄土塬区中的应用</strong><br>
+高秦, 陈超群, 王智茹, 田媛媛, 牛中宁, 王雪宁<br>
+2017 52 (s2):38-44. <span class="STYLE39">(处理技术)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.007
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7810.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+6 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7810"
+                                                                        >PDF</a> [2488 K] (<span class="STYLE33"> 
+
+
+
+
+
+229
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7810"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7811 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>火成岩发育区静校正技术与应用</strong><br>
+李素闪, 程元方, 刘建红, 杨会廷, 崔向飞<br>
+2017 52 (s2):45-49. <span class="STYLE39">(处理技术)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.008
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7811.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+6 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7811"
+                                                                        >PDF</a> [1376 K] (<span class="STYLE33"> 
+
+
+
+
+
+240
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7811"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7812 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>长庆油田GFZ三维可控震源资料关键处理技术</strong><br>
+赵玉华, 陈娟, 段毅, 寇芹, 黄研, 刘小亮<br>
+2017 52 (s2):50-55. <span class="STYLE39">(处理技术)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.009
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7812.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+2 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7812"
+                                                                        >PDF</a> [1793 K] (<span class="STYLE33"> 
+
+
+
+
+
+268
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7812"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7813 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>浅海拖缆地震数据处理中关键技术的应用与效果</strong><br>
+丁在宇, 杨勇, 王一鸣, 谢练兵, 王者武, 薛慧<br>
+2017 52 (s2):56-63. <span class="STYLE39">(处理技术)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.010
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7813.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+8 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7813"
+                                                                        >PDF</a> [1717 K] (<span class="STYLE33"> 
+
+
+
+
+
+282
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7813"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7814 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>低频配套处理技术在岩性油气藏识别中的应用</strong><br>
+张红军, 魏程霖, 张丹, 吴满生, 于明<br>
+2017 52 (s2):64-71. <span class="STYLE39">(处理技术)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.011
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7814.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+5 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7814"
+                                                                        >PDF</a> [2168 K] (<span class="STYLE33"> 
+
+
+
+
+
+244
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7814"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7815 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>基于剩余Q值的振幅校正</strong><br>
+徐强<br>
+2017 52 (s2):72-75. <span class="STYLE39">(处理技术)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.012
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7815.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+4 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7815"
+                                                                        >PDF</a> [1339 K] (<span class="STYLE33"> 
+
+
+
+
+
+239
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7815"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </TD>
+                          
+                          
+                      </TR>
+                      </TABLE>
+                        	                <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                      <TR>
+                        <TD height=20></TD>
+                        <TD vAlign=top align=left><TABLE width="100%" height=20 border=0 cellpadding="0" cellspacing="0">
+						<TR>
+                                          <TD bgColor=#eeeff0 height=20>&nbsp;<a name="偏移成像"></a><strong><FONT 
+                        color=#ff9900>偏移成像</FONT></strong></TD>
+                          </TR>
+                        </TABLE>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=3></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE></TD>
+                     
+                      </TR>
+                      <TR>
+                        <TD width=1></TD>
+                        <TD vAlign=top align=left>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7816 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>静校正对波动方程叠前深度偏移成像效果的影响</strong><br>
+王东, 李文卉, 熊登, 章晓, 武威, 吴晓丰<br>
+2017 52 (s2):76-80. <span class="STYLE39">(偏移成像)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.013
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7816.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+1 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7816"
+                                                                        >PDF</a> [1123 K] (<span class="STYLE33"> 
+
+
+
+
+
+252
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7816"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7817 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>逆时偏移技术在土库曼斯坦地区的应用</strong><br>
+姜国博, 曾庆芹, 李虹, 吴晓丰<br>
+2017 52 (s2):81-85,103. <span class="STYLE39">(偏移成像)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.014
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7817.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+5 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7817"
+                                                                        >PDF</a> [1160 K] (<span class="STYLE33"> 
+
+
+
+
+
+243
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7817"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7818 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>积分法Q成像技术的应用研究</strong><br>
+赵玲芝, 张建磊, 张巍毅<br>
+2017 52 (s2):86-90. <span class="STYLE39">(偏移成像)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.015
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7818.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+11 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7818"
+                                                                        >PDF</a> [1006 K] (<span class="STYLE33"> 
+
+
+
+
+
+222
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7818"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7819 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>三维转换波关键成像技术研究与应用</strong><br>
+边冬辉, 王小卫, 杨维, 杨哲, 王建华<br>
+2017 52 (s2):91-97. <span class="STYLE39">(偏移成像)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.016
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7819.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+9 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7819"
+                                                                        >PDF</a> [1849 K] (<span class="STYLE33"> 
+
+
+
+
+
+236
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7819"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7820 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>网格层析速度反演技术在齐古背斜叠前深度偏移中的应用</strong><br>
+肖艳玲, 范旭, 王晓涛, 张龙, 蒋立<br>
+2017 52 (s2):98-103. <span class="STYLE39">(偏移成像)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.017
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7820.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+3 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7820"
+                                                                        >PDF</a> [1259 K] (<span class="STYLE33"> 
+
+
+
+
+
+218
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7820"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7821 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>建模技术在准噶尔盆地滴南地区石炭系成像中的应用</strong><br>
+马晶晶, 王晓涛, 陈玉华, 毛海波, 阿力甫江&#183;热合木吐力<br>
+2017 52 (s2):104-109. <span class="STYLE39">(偏移成像)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.018
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7821.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+6 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7821"
+                                                                        >PDF</a> [1644 K] (<span class="STYLE33"> 
+
+
+
+
+
+185
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7821"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7822 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>速度建模特色技术的实际应用</strong><br>
+程玉坤, 刘建红, 周振晓, 姜绍辉, 郝晓光, 王磊<br>
+2017 52 (s2):110-115. <span class="STYLE39">(偏移成像)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.019
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7822.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+3 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7822"
+                                                                        >PDF</a> [1146 K] (<span class="STYLE33"> 
+
+
+
+
+
+242
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7822"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </TD>
+                          
+                          
+                      </TR>
+                      </TABLE>
+                        	                <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                      <TR>
+                        <TD height=20></TD>
+                        <TD vAlign=top align=left><TABLE width="100%" height=20 border=0 cellpadding="0" cellspacing="0">
+						<TR>
+                                          <TD bgColor=#eeeff0 height=20>&nbsp;<a name="综合研究"></a><strong><FONT 
+                        color=#ff9900>综合研究</FONT></strong></TD>
+                          </TR>
+                        </TABLE>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=3></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE></TD>
+                     
+                      </TR>
+                      <TR>
+                        <TD width=1></TD>
+                        <TD vAlign=top align=left>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7823 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>塔东古城地区深层油气藏岩溶储层预测</strong><br>
+王海龙, 杨午阳, 李海亮, 闫国亮, 李全虎<br>
+2017 52 (s2):116-122. <span class="STYLE39">(综合研究)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.020
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7823.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+0 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7823"
+                                                                        >PDF</a> [1332 K] (<span class="STYLE33"> 
+
+
+
+
+
+226
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7823"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7824 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>处理解释一体化技术在准噶尔盆地南缘齐古背斜的应用</strong><br>
+谭佳, 罗勇, 张淑萍, 蒋立, 王俊, 张龙<br>
+2017 52 (s2):123-128. <span class="STYLE39">(综合研究)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.021
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7824.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+2 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7824"
+                                                                        >PDF</a> [1412 K] (<span class="STYLE33"> 
+
+
+
+
+
+262
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7824"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7825 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>松辽盆地深层沙河子组致密砂岩储层预测</strong><br>
+王海龙, 曲永强, 张巧凤, 李海亮, 董雪华<br>
+2017 52 (s2):129-134. <span class="STYLE39">(综合研究)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.022
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7825.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+1 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7825"
+                                                                        >PDF</a> [1275 K] (<span class="STYLE33"> 
+
+
+
+
+
+226
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7825"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7826 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>地震多属性断裂识别技术在中拐凸起石炭系中的应用</strong><br>
+仲伟军, 姚卫江, 贾春明, 党玉芳, 蔡义峰, 庞志超<br>
+2017 52 (s2):135-139. <span class="STYLE39">(综合研究)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.023
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7826.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+4 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7826"
+                                                                        >PDF</a> [934 K] (<span class="STYLE33"> 
+
+
+
+
+
+271
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7826"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7827 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>地震多属性分析技术在薄层砂体预测中的应用</strong><br>
+蔡义峰, 熊婷, 姚卫江, 邢成智, 仲伟军, 贾春明<br>
+2017 52 (s2):140-145. <span class="STYLE39">(综合研究)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.024
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7827.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+3 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7827"
+                                                                        >PDF</a> [1078 K] (<span class="STYLE33"> 
+
+
+
+
+
+276
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7827"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7828 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>准噶尔盆地玛湖1井区高密度三维OVT域裂缝预测的应用</strong><br>
+林娟, 娄兵, 张淑萍, 潘龙, 贺陆明, 郑鸿明<br>
+2017 52 (s2):146-152. <span class="STYLE39">(综合研究)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.025
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7828.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+9 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7828"
+                                                                        >PDF</a> [1946 K] (<span class="STYLE33"> 
+
+
+
+
+
+283
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7828"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7829 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>滇黔北地区HJB区块石牛栏组储层评价方法</strong><br>
+姚燕飞, 徐涛, 王红, 李静叶, 孟阳<br>
+2017 52 (s2):153-157. <span class="STYLE39">(综合研究)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.026
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7829.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+1 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7829"
+                                                                        >PDF</a> [1205 K] (<span class="STYLE33"> 
+
+
+
+
+
+208
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7829"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7830 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>多属性分析技术在碳酸盐岩断溶体预测中的应用</strong><br>
+徐红霞, 沈春光, 李斌, 董文学<br>
+2017 52 (s2):158-163. <span class="STYLE39">(综合研究)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.027
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7830.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+7 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7830"
+                                                                        >PDF</a> [1550 K] (<span class="STYLE33"> 
+
+
+
+
+
+231
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7830"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7831 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>属性融合技术在微小断裂识别中的应用</strong><br>
+赵小辉, 于宝利, 曹小璐<br>
+2017 52 (s2):164-169. <span class="STYLE39">(综合研究)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.028
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7831.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+6 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7831"
+                                                                        >PDF</a> [1380 K] (<span class="STYLE33"> 
+
+
+
+
+
+235
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7831"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7832 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>多属性分析及断裂识别技术在酒泉盆地油气勘探中的应用</strong><br>
+孙成田, 赵伟, 雷福平, 朱俊杰, 肖文华, 魏浩元<br>
+2017 52 (s2):170-174. <span class="STYLE39">(综合研究)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.029
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7832.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+3 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7832"
+                                                                        >PDF</a> [1245 K] (<span class="STYLE33"> 
+
+
+
+
+
+260
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7832"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7833 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>鸭儿峡白垩系下沟组沟一3亚段有利储层预测及构造解释</strong><br>
+高翔, 由成才, 韦德强, 张楠, 向鑫, 苑伯超<br>
+2017 52 (s2):175-181. <span class="STYLE39">(综合研究)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.030
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7833.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+6 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7833"
+                                                                        >PDF</a> [1780 K] (<span class="STYLE33"> 
+
+
+
+
+
+189
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7833"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7834 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>云质岩油藏综合描述技术在FN5井区的应用</strong><br>
+陈华, 周东言, 季焕成, 刘荷冲, 王连桥, 秦赛赛<br>
+2017 52 (s2):182-187. <span class="STYLE39">(综合研究)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.031
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7834.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+1 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7834"
+                                                                        >PDF</a> [1310 K] (<span class="STYLE33"> 
+
+
+
+
+
+194
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7834"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7835 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>地震储层综合预测技术在鄂尔多斯盆地合水地区的应用</strong><br>
+赵玉华, 黄黎刚, 朱军, 张杰, 赵德勇<br>
+2017 52 (s2):188-193. <span class="STYLE39">(综合研究)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.032
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7835.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+5 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7835"
+                                                                        >PDF</a> [1380 K] (<span class="STYLE33"> 
+
+
+
+
+
+247
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7835"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7836 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>地震属性技术在湖底河道砂体刻画中的应用</strong><br>
+安鹏, 于志龙, 党虎强, 刘专, 尹晓贺, 史亚彬<br>
+2017 52 (s2):194-199. <span class="STYLE39">(综合研究)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.033
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7836.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+2 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7836"
+                                                                        >PDF</a> [1378 K] (<span class="STYLE33"> 
+
+
+
+
+
+296
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7836"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                                                                                                                                                                                </TD>
+                          
+                          
+                      </TR>
+                      </TABLE>
+                        	                <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                      <TR>
+                        <TD height=20></TD>
+                        <TD vAlign=top align=left><TABLE width="100%" height=20 border=0 cellpadding="0" cellspacing="0">
+						<TR>
+                                          <TD bgColor=#eeeff0 height=20>&nbsp;<a name="软件技术与应用"></a><strong><FONT 
+                        color=#ff9900>软件技术与应用</FONT></strong></TD>
+                          </TR>
+                        </TABLE>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=3></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE></TD>
+                     
+                      </TR>
+                      <TR>
+                        <TD width=1></TD>
+                        <TD vAlign=top align=left>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7837 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>大规模异构集群地震作业调度与资源管理系统的设计与实现</strong><br>
+罗刚, 陈继红, 孙孝萍, 周坤, 杜吉国<br>
+2017 52 (s2):200-205. <span class="STYLE39">(软件技术与应用)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.034
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7837.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+5 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7837"
+                                                                        >PDF</a> [1010 K] (<span class="STYLE33"> 
+
+
+
+
+
+243
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7837"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                     
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7838 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>利用GeoEast系统开发VSP处理模块</strong><br>
+蒋立, 毛海波, 罗玢, 刘宏杰, 王晓涛<br>
+2017 52 (s2):206-211. <span class="STYLE39">(软件技术与应用)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.035
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7838.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+6 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7838"
+                                                                        >PDF</a> [1115 K] (<span class="STYLE33"> 
+
+
+
+
+
+210
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7838"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                                                                            </TD>
+                          
+                          
+                      </TR>
+                      </TABLE>
+                        	                <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                      <TR>
+                        <TD height=20></TD>
+                        <TD vAlign=top align=left><TABLE width="100%" height=20 border=0 cellpadding="0" cellspacing="0">
+						<TR>
+                                          <TD bgColor=#eeeff0 height=20>&nbsp;<a name="非地震"></a><strong><FONT 
+                        color=#ff9900>非地震</FONT></strong></TD>
+                          </TR>
+                        </TABLE>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=3></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE></TD>
+                     
+                      </TR>
+                      <TR>
+                        <TD width=1></TD>
+                        <TD vAlign=top align=left>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="td42">
+                          <tr>
+                            <td width="20" valign="top"><INPUT type=checkbox value=7839 name=pid></td>
+                            <td width="468" valign="top"><label></label>
+                              <strong>陆地及毗邻海域重力布格校正技术</strong><br>
+冀连胜<br>
+2017 52 (s2):212-216. <span class="STYLE39">(非地震)</span> <br>
+DOI: 10.13810/j.cnki.issn.1000-7210.2017.S2.036
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table></td>
+                            <td width="10" valign="top">&nbsp;</td>
+                            <td width="190" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="2" colspan="2" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td><img src="../../images/abs.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A href="../abstract/abstract7839.shtml" target=_blank>摘要</a> (<span class="STYLE33"> 
+
+
+
+
+
+6 </span>)</td>
+                              </tr>
+                              <tr>
+                                <td><img src="../../images/pdf.jpg" width="16" height="16"></td>
+                                <td>&nbsp;<A 
+																												                                    href="../article/downloadArticleFile.do?attachType=PDF&id=7839"
+                                                                        >PDF</a> [2246 K] (<span class="STYLE33"> 
+
+
+
+
+
+210
+
+ </span>)</td>
+                              </tr>
+                              <tr>
+                                <td width="14%"><img src="../../images/ie.jpg" width="16" height="16"></td>
+                                <td width="86%"><A href="#"></A>&nbsp;<A class="J_VM" 
+							                            	                                    href="../article/downloadArticleFile.do?attachType=HTML&id=7839"
+                                                      >HTML</a> [1 K] </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                          <TABLE border=0 cellSpacing=0 cellPadding=0 
+                                width="50%">
+                            <TBODY>
+                              <TR>
+                                <TD 
+height=5></TD>
+                              </TR>
+                            </TBODY>
+                          </TABLE>
+                                                                                                                                                          </TD>
+                          
+                          
+                      </TR>
+                      </TABLE>
+                                              </TD>
+                      
+	                  </TR>
+	                    
+              </TABLE>
+      </FORM></td>
+        </tr>
+        <tr>
+          <td height="5"></td>
+        </tr>
+      </table>
+	              </td> 
+          
+		        <TD width=8  bgcolor="#ffffff"></TD>
+		<!--中间. 右部--> 			        
+		        <TD width=185 valign="top" bgColor=#FFFFFF>
+					<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>石油地球物理勘探</TITLE>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../images/css.css" type="text/css" rel="stylesheet">
+	<META content="MSHTML 6.00.2900.3157" name=GENERATOR>
+    <META name=GENERATOR content="MSHTML 6.00.2900.3157">
+
+</HEAD>
+
+<BODY LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width=196 align=right>
+  <TR>
+    <TD vAlign=top width=196 align=middle>
+                  <TABLE border=0 cellSpacing=0 cellPadding=0 width=190>
+                    <TBODY>
+                    <TR>
+                      <TD height=10></TD></TR>
+                    <TR>
+                      <TD height=21 background=../../images/top.jpg 
+                        width=192>　<STRONG class=txt_bs>作者中心</STRONG></TD></TR>
+                    <TR>
+                      <TD background=../../images/top_z.jpg align=middle>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width=188>
+                          <TBODY>
+                          <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD></TR>
+                          <TR>
+                            <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                            align=left>　<A 
+                              href="http://manu52.magtech.com.cn/Journalx_ogp/basicinfo/viewHtmlFile.action?magId=7&id=8" target=_blank>投稿须知</A></TD>
+                          </TR>
+                          <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD></TR>
+                          <TR>
+                            <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                            align=left>　<A 
+                              href="../column/column117.shtml">论文写作须知</A></TD>
+                          </TR>
+						  
+						   <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD></TR>
+						  
+						  <TR>
+                            <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                            align=left>　<A 
+                              href="../../UserFiles/File/论文编排格式模板.zip">论文模板</A></TD>
+                          </TR>
+						  
+                          <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD></TR>
+                          <TR>
+                            <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                            align=left>　<A target=_blank 
+                              href="http://manu52.magtech.com.cn/Journalx_ogp/authorLogOn.action">在线投稿</A></TD></TR>
+                          <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD></TR>
+                          <TR>
+                            <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                            align=left>　<A target=_blank 
+                              href="http://manu52.magtech.com.cn/Journalx_ogp/authorLogOn.action?mag_Id=7">在线查稿</A></TD></TR>
+                         </TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD><IMG hspace=0 src="../../images/top_x.jpg" 
+                        width=190 height=7></TD></TR></TBODY></TABLE>
+                  <TABLE border=0 cellSpacing=0 cellPadding=0 width=190>
+                    <TBODY>
+                    <TR>
+                      <TD height=10></TD></TR>
+                    <TR>
+                      <TD height=21 background=../../images/top.jpg 
+                        width=192>　<STRONG class=txt_bs>审稿中心</STRONG></TD></TR>
+                    <TR>
+                      <TD background=../../images/top_z.jpg align=middle>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width=188>
+                          <TBODY>
+                          <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD></TR>
+                          <TR>
+                            <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                            align=left>　<A target=_blank 
+                              href="http://manu52.magtech.com.cn/Journalx_ogp/editorInChiefLogOn.action?mag_Id=7">主编审稿</A></TD></TR>
+                          <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD></TR>
+                          <TR>
+                            <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                            align=left>　<A target=_blank 
+                              href="http://manu52.magtech.com.cn/Journalx_ogp/expertLogOn.action?mag_Id=7">专家审稿</A></TD></TR>
+                          <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD></TR>
+                          <TR>
+                            <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                            align=left>　<A target=_blank 
+                              href="http://manu52.magtech.com.cn/Journalx_ogp/reviewerregister/ReviewerRegister!reviewerNotice.action?magId=7">申请成为审稿人</A></TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD><IMG hspace=0 src="../../images/top_x.jpg" 
+                        width=190 height=7></TD></TR></TBODY></TABLE>
+                  <TABLE border=0 cellSpacing=0 cellPadding=0 width=190>
+                    <TBODY>
+                    <TR>
+                      <TD height=10></TD></TR>
+                    <TR>
+                      <TD height=21 background=../../images/top.jpg 
+                        width=192>　<STRONG class=txt_bs>读者中心</STRONG></TD></TR>
+                    <TR>
+                      <TD background=../../images/top_z.jpg align=middle>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width=188>
+                          <TBODY>
+                          <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD></TR>
+                          <TR>
+                            <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                            align=left>　<A target=_blank 
+                              href="../column/column82.shtml">期刊订阅</A></TD>
+                          </TR>
+                          <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD></TR>
+                          <TR>
+                            <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                            align=left>　<A target=_blank 
+                              href="../alert/showAlertInfo.do">免费电子目录</A></TD>
+                          </TR>
+                          <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD></TR>
+                          <TR>
+                            <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                            height=22 vAlign=center align=left><A 
+                              href="../rss/showRssInfo.do"><IMG 
+                              border=0 hspace=12 src="../../images/rss.gif" 
+                              width=36 height=14></A></TD>
+                          </TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD><IMG hspace=0 src="../../images/top_x.jpg" 
+                        width=190 height=7></TD></TR></TBODY></TABLE>
+                  <TABLE border=0 cellSpacing=0 cellPadding=0 width=190>
+
+                    <TR>
+                      <TD height=10></TD></TR>
+                    <TR>
+                      <TD height=21 background=../../images/top.jpg 
+                        width=192>　<STRONG class=txt_bs>会员中心</STRONG></TD></TR>
+                    <TR>
+                      <TD height=1 background=../../images/bg.gif 
+                      align=left></TD></TR>
+                    <TR>
+                      <TD background=../../images/top_z.jpg align=center>
+                      <IFRAME id="browse" border=0 src="../user/userInfo_cn.jsp" width=92% height=80 scrolling=no frameborder=0 allowtransparency="true"></IFRAME></TD>
+                    </TR>
+                    <TR>
+                      <TD><IMG hspace=0 src="../../images/top_x.jpg" 
+                        width=190 height=7></TD></TR></TBODY></TABLE>
+                  <TABLE border=0 cellSpacing=0 cellPadding=0 width=190>
+                    <TBODY>
+                    <TR>
+                      <TD height=10></TD></TR>
+                    <TR>
+                      <TD height=21 background=../../images/top.jpg 
+                        width=192>　<STRONG class=txt_bs>下载中心</STRONG></TD></TR>
+                    <TR>
+                      <TD background=../../images/top_z.jpg align=middle>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width=188>
+                          <TBODY>
+                          <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD></TR>
+                          <TR>
+                            <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                            align=left>　<A 
+                              href="../../UserFiles/File/lwmb.zip" target="_blank">稿件加工模版</A></TD>
+                          </TR>
+                          <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD></TR>
+                          <TR>
+                            <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                            align=left>　<A 
+                              href="../../copyright_AAS.pdf" target="_blank">版权转让协议</A></TD>
+                          </TR>
+                          <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD></TR>
+                          <TR>
+                            <TD align=left>　　　　　　　　　　　<A 
+                              href="../column/column129.shtml">更多...</A></TD>
+                          </TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD><IMG hspace=0 src="../../images/top_x.jpg" 
+                        width=190 height=7></TD></TR></TBODY></TABLE>
+                  <TABLE border=0 cellSpacing=0 cellPadding=0 width=190>
+                    <TBODY>
+                    <TR>
+                      <TD height=10></TD></TR>
+                    <TR>
+                      <TD height=21 background=../../images/top.jpg 
+                        width=192>　<STRONG class=txt_bs>友情链接</STRONG></TD></TR>
+                    <TR>
+                      <TD background=../../images/top_z.jpg align=middle>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width=188>
+                          <TBODY>
+                          <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD></TR>
+			    <TR>
+                            <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                            align=left>　<A target=_blank 
+                              href="http://www.spg.org.cn">中国石油学会物探专业委员会</A></TD></TR>
+                          <TR>
+			   <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD>
+			    </TR>
+                          <TR>
+                            <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                            align=left>　<A target=_blank 
+                              href="http://www.cnki.net/">中国期刊网</A></TD></TR>
+                          <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD></TR>
+                          <TR>
+                            <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                            align=left>　<A target=_blank 
+                              href="http://www.wanfangdata.com.cn/">万方数据</A></TD></TR>
+                          <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD></TR>
+                          <TR>
+                            <TD onmouseover=chg2(this,1) onmouseout=chg2(this,0) 
+                            align=left>　<A target=_blank 
+                              href="http://www.geophy.cn/">地球物理学报</A></TD></TR>
+                          <TR>
+                            <TD height=1 background=../../images/bg.gif 
+                            align=left></TD></TR>
+                          <TR>
+                            <TD align=left>　　　　　　　　　　　<A 
+                              href="../column/column111.shtml">更多...</A></TD>
+                          </TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD><IMG hspace=0 src="../../images/top_x.jpg" 
+                        width=190 height=7></TD></TR></TBODY></TABLE>
+                  <TABLE border=0 cellSpacing=0 cellPadding=0 width=190>
+                    <TBODY>
+                    <TR>
+<TD height=10 width=192></TD></TR></TBODY></TABLE></TD>
+
+</TR></TABLE>
+</body>
+</html>
+				</TD>
+		        
+		        
+      </TR>
+</TABLE>
+
+
+		
+	 <!--底部-->
+<TABLE border=0 cellSpacing=0 cellPadding=0 width=1004 align=center>
+		<TR>
+			<TD valign=top>
+			<HTML>
+<HEAD>
+<TITLE></TITLE>
+	<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+	<link href="../../images/css.css" type="text/css" rel="stylesheet">
+	<SCRIPT type=text/javascript 
+src="../../images/MSClass.js"></SCRIPT>
+	<META content="MSHTML 6.00.2900.3157" name=GENERATOR>
+</HEAD>
+<BODY>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width=1004 align=center>
+  <TBODY>
+  <TR>
+    <TD vAlign=top>
+      <TABLE cellSpacing=0 cellPadding=0 width=1004 align=center height=83>
+        <TBODY>
+        
+        <TR>
+          <TD height=100 background=../../images/ddd.jpg align=center>
+          
+          版权所有 &copy; 
+                  2008《石油地球物理勘探》编辑部<BR>本系统由<A target=_blank 
+                  href="http://www.magtech.com.cn/">北京玛格泰克科技发展有限公司</A>设计开发 
+                  &nbsp;技术支持：<A target=_blank 
+                  href="mailto:support@magtech.com.cn">support@magtech.com.cn</A><BR>
+                  <script language="javascript" type="text/javascript" src="http://js.users.51.la/3441967.js"></script>
+                  <br>
+                  <a href="http://www.miibeian.gov.cn" target="_blank"><strong>京ICP备13042042号</strong></a></TD>
+</TR></TBODY>
+      </TABLE></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>
+			</TD>
+		</TR>
+</TABLE>
+
+</BODY>
+</HTML>
